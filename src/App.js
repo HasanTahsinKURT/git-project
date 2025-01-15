@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./App.css";
+import GitKomutlari from "./GitKomutlari";
 
 function App() {
   useEffect(() => {
@@ -69,6 +70,7 @@ function App() {
             <li><strong>DevOps Uygulamaları:</strong> Git, sürekli entegrasyon (CI) ve sürekli teslimat (CD) süreçlerinde temel taş görevi görür.</li>
             <li><strong>Eğitim ve Staj Projeleri:</strong> Yeni yazılımcılar, Git kullanarak takım çalışması deneyimi kazanabilir.</li>
           </ul>
+          <GitKomutlari />
         </section>
         <section id="career">
           <h2><strong>Kendi Kariyer Planım</strong></h2>
@@ -77,7 +79,7 @@ function App() {
           <h3><strong>Kısa Vadeli Planlar:</strong></h3>
           <ul>
             <li><strong>GitHub ve GitLab gibi platformlarda aktif projeler oluşturmak:</strong> Projelerimi paylaşarak, açık kaynak dünyasında daha fazla katkı sağlamak ve topluluklarla etkileşime geçmek istiyorum.</li>
-            <li><strong>Git’in ileri komutları konusunda uzmanlaşmak:</strong> `rebase`, `cherry-pick`, `stash` gibi gelişmiş Git komutlarını kullanarak, sürüm kontrolündeki yetkinliğimi artırmayı hedefliyorum.</li>
+            <li><strong>Git’in ileri komutları konusunda uzmanlaşmak:</strong> rebase, cherry-pick, stash gibi gelişmiş Git komutlarını kullanarak, sürüm kontrolündeki yetkinliğimi artırmayı hedefliyorum.</li>
             <li><strong>Yazılım geliştirme topluluklarına katılmak:</strong> Forumlar, konferanslar ve meetuplara katılarak sektördeki yenilikleri takip etmek ve daha fazla deneyim kazanmak.</li>
           </ul>
 
@@ -103,8 +105,8 @@ function App() {
         <ul>
           <li>Hasan Tahsin KURT - 210710025</li>
           <li>Alperen İLGAZ - 210710027</li>
-          <li>Onuralp ÇALMAŞUR - 210710040</li>
-          <li>Eray GÜNER - 210710041</li>
+          <li>Onuralp ÇALMAŞUR - 210710045</li>
+          <li>Eray GÜNNER - 210710052</li>
         </ul>
       </footer>
     </div>
