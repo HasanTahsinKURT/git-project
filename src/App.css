@@ -1,0 +1,225 @@
+/* Genel Sayfa Stil Ayarları */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh; /* Sayfanın tamamının görünmesini sağlamak için */
+  background-color: #f0f2f5; /* Arka plan rengi */
+}
+
+/* Genel sayfa yapısı */
+.App {
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  padding-bottom: 60px; /* Footer'ın içerikleri kapatmaması için içerik altı boşluk */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Footer'ın sayfada en altta kalmasını sağlar */
+  background-color: #ffffff; /* Beyaz arka plan */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sayfa etrafında hafif gölge */
+  border-radius: 8px; /* Köşe yuvarlama */
+}
+
+/* Header */
+.App-header {
+  background-color: #343a40;
+  color: white;
+  padding: 30px;
+  border-radius: 8px 8px 0 0;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5em; /* Başlık boyutunu büyüt */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+}
+
+/* Navigation */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Sayfanın üstünde kalması için */
+  background-color: rgba(255, 255, 255, 0.8); /* Hafif saydam arka plan */
+  backdrop-filter: blur(10px); /* Scroll yapıldığında blur efekti */
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0; /* Ekstra iç boşluk */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* İnce alt çizgi */
+  transition: all 0.3s ease-in-out;
+}
+
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #343a40;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 10px 15px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.05); /* Hoverda büyüme efekti */
+}
+
+/* Section Başlangıcını Düzenleme */
+section {
+  padding-top: 60px; /* Üst boşluk ekler */
+  scroll-margin-top: 80px; /* Scroll yaparken navigasyonun içeriği kapatmamasını sağlar */
+}
+
+/* Scroll yapıldığında nav kısmına animasyon */
+nav.scrolled {
+  background-color: rgba(255, 255, 255, 0.9); /* Arka plan daha belirgin */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+}
+
+/* Main Content */
+main {
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  flex: 1; /* Sayfanın geri kalan kısmını alır */
+  margin-bottom: 50px; /* Footer'ın üstünde boşluk bırakır */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Hafif gölge */
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #007bff; /* Başlık altı çizgi */
+  padding-bottom: 10px;
+}
+
+p, li {
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #555;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  position: relative;
+}
+
+li:before {
+  content: "•";
+  color: #007bff; /* Madde işaretini mavi yapmak */
+  font-size: 1.5em;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Footer */
+footer {
+  background-color: #212529; /* Daha koyu bir arka plan rengi */
+  color: #f8f9fa; /* Açık beyaz metin rengi */
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-top: 40px;
+}
+
+/* Footer içindeki metin ve yazılar */
+footer p {
+  margin: 5px 0;
+  font-size: 1.1em;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* Footer içindeki liste */
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Liste öğeleri */
+footer li {
+  margin: 5px 0;
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #f8f9fa; /* Açık renk yazı */
+}
+
+/* Footer linkleri */
+footer a {
+  color: #ffc107; /* Altın sarısı renkli linkler */
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  font-size: 1.1em;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #ffca2c; /* Hoverda altın sarısı rengi biraz daha canlı hale getirdik */
+}
+
+/* Responsive Tasarım için Footer */
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 30px 15px;
+  }
+
+  footer ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  footer p {
+    font-size: 1em;
+  }
+
+  footer a {
+    font-size: 1em;
+  }
+}
+
+/* Responsive Tasarım */
+@media screen and (max-width: 768px) {
+  .App {
+    padding: 15px;
+  }
+
+  nav a {
+    margin: 10px 15px;
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p, li {
+    font-size: 1em;
+  }
+}
